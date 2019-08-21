@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo2</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+  <div class="header-logo">
+      <%= link_to "人生の目標", "/" %>
+  </div>
+  <ul class = "header-menus">
+    <li>
+      <%= link_to "トップへ", "/" %>
+    </li>
+    <li>
+      <%= link_to "後悔しない生き方とは","/about" %>
+    </li>
+    <li>
+      <%= link_to "今日までに", posts_path %>
+    </li>
+    <li>
+      <%= link_to "新規投稿",new_post_path %>
+    </li>
+  </ul>
+</header>
+    <%= yield %>
+  </body>
+</html>
