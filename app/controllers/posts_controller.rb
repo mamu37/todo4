@@ -21,7 +21,17 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def create2
+    @post = Post.new(title: params[:title])
+    @post.save
+    redirect_to posts_index2_path
+  end
+
   def new
+    @post = Post.new
+  end
+
+  def new2
     @post = Post.new
   end
 

@@ -97,3 +97,15 @@
   font-size: 24px;
   opacity: 0.5;
 }
+
+.new-post{
+  display: inline;
+  color: #8e5151;
+  float: right;
+  padding-top: 20px;
+  line-height: 20px;
+}
+
+.new-post:hover{
+  opacity: 0.5
+}

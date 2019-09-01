@@ -68,15 +68,16 @@ body{
 }
 
 .about-main{
-  padding: 335px 8% 0;
+  padding: 200px;
   background-image: url("haikei.jpg");
   background-size:cover;
-
+  color: white;
 }
 
 .about-main h2{
   font-size: 60px;
   color: #b13c3c;
+  text-decoration: underline;
 }
 
 .about-main li{
@@ -89,9 +90,11 @@ body{
 header{
   height: 60px;
   width: 100%;
-  background-color: #e6e6e6;
+  background-color: #201c21;
   position: absolute;
   z-index: 1;
+  position: fixed;
+  top: 0;
 }
 
 .header-logo{
@@ -102,9 +105,20 @@ header{
   line-height: 60px;
 }
 
+.header-logo:hover{
+  opacity: 0.4;
+  text-decoration: underline;
+}
+
+
 .header-menus{
   float: right;
   padding-right: 20px;
+}
+
+.header-menus li :hover{
+  opacity: 0.4;
+  text-decoration: underline;
 }
 
 .header-menus li{
@@ -168,24 +182,9 @@ header{
 }
 
 /* about ================================ */
-.about-main {
-  padding: 180px 8% 0;
-  color: white;
-}
-
-.about-main h2 {
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-.about-main p {
-  font-weight: 200;
-  font-size: 20px;
-}
 
 .about-img {
-  width: 84%;
+  width: 100%;
 }
 
 /* フォーム================================ */
@@ -258,4 +257,8 @@ header{
   width: 100%;
   border-radius: 0 0 2px 2px;
   font-size: 14px;
+}
+
+.item{
+  background-size: cover;
 }

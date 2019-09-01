@@ -1,14 +1,14 @@
 
 <div class="main posts-index">
   <div class="container">
-    <h1>今日までにすべきこと</h1>
-    <% @posts.each do |post| %>
+    <h1>理想の暮らし</h1>
+    <% @writes.each do |write| %>
       <div class="posts-index-item">
         <%= check_box_tag :sample %>
         <%= label_tag %>
-        <%= link_to post.content, post_path(post) %>
+        <%= link_to write.content, write_path(write) %>
       </div>
     <% end %>
-    <%= link_to "新規投稿", new_post_path, class: "new-post" %>
+    <%= link_to "新規投稿", new_write_path, class: "new-post" %>
   </div>
 </div>

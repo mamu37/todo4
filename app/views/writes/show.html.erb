@@ -1,0 +1,16 @@
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <p>
+        <%= @write.content %>
+      </p>
+      <div class="post-time">
+        <%= @write.created_at %>
+      </div>
+        <div class="post-menus">
+        <%= link_to "編集", edit_write_path %>
+        <%= link_to "削除する", write_path, method: :delete,data:{confirm:"本当によろしいですか？"} %>
+      </div>
+    </div>
+  </div>
+</div>
